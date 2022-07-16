@@ -9,7 +9,12 @@ public class RomanNumeralsConversionTest {
     RomanNumeralsConversion romanNumeralsConversion = new RomanNumeralsConversion();
 
     @Test
-    void romanNumeralTest() {
-        assertThat(romanNumeralsConversion.romanConverter("d")).isEqualTo(0);
+    void romanNumeralFor99() {
+        assertThat(romanNumeralsConversion.romanConverter(99)).isEqualTo("XCIX");
+    }
+
+    @Test
+    void romanNumeralFor121() {
+        assertThat(romanNumeralsConversion.romanConverter(121)).isEqualTo("CXXI");
     }
 }
